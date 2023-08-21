@@ -23,6 +23,9 @@ void loop() {
 }
   delay(1000); // Wait for a second
 }
+
+
+
 * If i send "led on" from the specified number , on board blue LED on wrover will turn on and replies with a message "led is turned on" from the wrover module
 * If i send "led off" from the specified number , on board blue LED will turn off and if UART data is available on RX pin, that data will send to the specified number as reply
    
