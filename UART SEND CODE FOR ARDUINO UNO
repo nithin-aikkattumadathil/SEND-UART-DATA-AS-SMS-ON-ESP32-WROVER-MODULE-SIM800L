@@ -1,0 +1,18 @@
+
+const int ledPin = 13;
+void setup() {
+  Serial.begin(115200); // Initialize Serial communication at 9600 baud
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  // Transmit a test message
+  if(Serial.println("test"))
+{
+    digitalWrite(ledPin, HIGH);
+  delay(50);
+  digitalWrite(ledPin, LOW);
+  delay(50);
+}
+  delay(1000); // Wait for a second
+}
